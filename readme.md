@@ -1,6 +1,6 @@
-# cz-emoji
+# cz-emoji-habit
 
-> Commitizen adapter formatting commit messages using emojis.
+> Commitizen adapter formatting commit messages using emojis. This project is forked from cz-emoji.
 
 **cz-emoji** allows you to easily use emojis in your commits using [commitizen].
 
