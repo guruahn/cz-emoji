@@ -35,11 +35,11 @@ async function getConfig() {
     conventional: false
   }
 
-  const loadedConfig =
-    (await loadConfigUpwards('package.json')) ||
-    (await loadConfigUpwards('.czrc')) ||
-    (await loadConfig(path.join(homedir(), '.czrc'))) ||
-    {}
+  let loadedConfig = await loadConfigUpwards('package.json')
+  const localCzrc = await loadConfigUpwards('.czrc');
+  const globalCzrc = await loadConfig(path.join(homedir(), '.czrc'));
+  if(localCzrc) Object.assign(loadedConfig, localCzrc);
+  if(globalCzrc) Object.assign(loadedConfig, globalCzrc);
 
   const config = {
     ...defaultConfig,
