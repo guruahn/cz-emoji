@@ -24,7 +24,7 @@ function loadConfigUpwards(filename) {
 }
 
 async function getConfig() {
-  const defaultFormat = '{emoji} {type} {scope} {subject}'
+  const defaultFormat = '{emoji} {type} {scope} : {subject}'
   const conventionalFormat = `{type}{scope}: {emoji} {subject}`
 
   const defaultConfig = {

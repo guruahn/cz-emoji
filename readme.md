@@ -18,11 +18,21 @@
 **Globally**
 
 ```bash
-npm install --global cz-emoji
-
-# set as default adapter for your projects
-echo '{ "path": "cz-emoji" }' > ~/.czrc
+npm install --global cz-emoji-habit
+$ vi ~/.czrc 
 ```
+Paste the contents below.
+
+```json
+{
+  "path": "cz-emoji-habit",
+  "config": {
+    "cz-emoji": {
+      "symbol": true
+    }
+  }
+}
+``````
 
 **Locally**
 
