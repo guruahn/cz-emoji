@@ -1,6 +1,6 @@
 {
   "name": "cz-emoji-habit",
-  "version": "1.3.8",
+  "version": "1.3.9",
   "description": "Commitizen adapter formatting commit messages using emojis.",
   "author": "Jeongwoo Ahn <guruahn@gmail.com> (https://jeongwoo.in/)",
   "license": "MIT",
