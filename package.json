@@ -19,8 +19,8 @@
     "emoji"
   ],
   "scripts": {
-    "pub-minor": "npm version minor -m '🔖 update minor version' --force && npm publish",
-    "pub": "npm version patch -m '🔖 update patch version' --force && npm publish"
+    "pub-minor": "npm version minor -m '🔖 %s : update minor version' --force && npm publish",
+    "pub": "npm version patch -m '🔖 %s : update patch version' --force && npm publish"
   },
   "config": {
     "commitizen": {
